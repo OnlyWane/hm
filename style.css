@@ -1,0 +1,1017 @@
+/*初始化代码*/
+body,
+div,
+span,
+p,
+img,
+input,
+button,
+i,
+b,
+u,
+s,
+ins,
+strong,
+em,
+del,
+ul,
+li,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+img {
+    border: none;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    font-style: normal;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
+}
+
+body {
+    font:  12px/100% "微软雅黑";
+    background-color: #f6f6f6;
+}
+
+.clearfix::after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*top部分*/
+.top {
+    height: 30px;
+    background-color: #ebebeb;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.top .link-list {
+    height: 30px;
+    line-height: 30px;
+}
+
+.top .link-list li {
+    float: left;
+    margin-right: 12px;
+    color: #565656;
+}
+
+.top .link-list li:first-child {
+    margin-right: 20px;
+}
+
+.top .link-list li a {
+    color: #565656;
+}
+
+
+/*主体导航条nav*/
+.nav-box {
+    height: 129px;
+    background-color: #fff;
+}
+.nav-box .inner {
+    height: 129px;
+    position: relative;
+}
+
+.nav-box .logo {
+    position: absolute;
+    top: 15px;
+    width: 188px;
+    height: 57px;
+}
+
+.nav-box .logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("./images/logo.png");
+    text-indent: -9999px;
+}
+
+.nav-box .slogan {
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+
+.nav-box .nav-list {
+    position: absolute;
+    bottom: 20px;
+    left: 260px;
+}
+
+.nav-box .nav-list li {
+    float: left;
+    font-size: 16px;
+    margin-right: 30px;
+    line-height: 16px;
+}
+
+.nav-box .nav-list li a {
+    color: #090723;
+}
+
+/*广告banner部分*/
+.banner {
+    position: relative;
+    height: 385px;
+    /*overflow: hidden;*/
+    /*background-color: #000;*/
+}
+
+/*.banner .inner {*/
+    /*height: 385px;*/
+    /*position: relative;*/
+/*}*/
+
+.banner .banner-list {
+    /*position: absolute;*/
+    /*right: 0;*/
+    /*width: 968px;*/
+    width: 100%;
+    height: 385px;
+    overflow: hidden;
+}
+
+.banner .banner-list ul {
+    position: relative;
+    /*width: 7744px ;*/
+    /*width: 100%;*/
+    /*height: 385px;*/
+    /*overflow: hidden;*/
+}
+
+.banner .banner-list ul li {
+    height: 385px;
+    background-color: rgb(0,103,162);
+    float: left;
+    position: relative;
+}
+
+.banner .banner-list ul li:nth-child(2){
+    background-color: rgb(2,6,51);
+}
+
+.banner .banner-list ul li:nth-child(3){
+    background-color: rgb(209,25,49);
+}
+
+.banner .banner-list ul li:nth-child(4){
+    background-color: rgb(0,0,0);
+}
+
+.banner .banner-list ul li:nth-child(5){
+    background-color: rgb(236,236,236);
+}
+
+.banner .banner-list ul li:nth-child(6){
+    background-color: rgb(60,17,109);
+}
+
+.banner .banner-list ul li:nth-child(7){
+    background-color: rgb(0,15,30);
+}
+
+
+.banner .banner-list ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.banner .banner-list ul li a span {
+    display: block;
+    height: 385px;
+
+}
+
+.banner img {
+   margin-left: 231px;
+    height: 385px;
+}
+
+.banner .sel {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.banner .sel i {
+    float: left;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: 0 3px;
+    background-color:rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+
+.banner .sel i.current {
+    background-color: #276dbc;
+}
+
+.banner .control {
+    position: absolute;
+    width: 100%;
+    height: 29px;
+    top: 50%;
+    transform: translate(0,-50%);
+    display: none;
+}
+
+.banner .control i.sel-l {
+    float: left;
+    margin-left: 10px;
+    width: 15px;
+    height: 29px;
+    background: url("./images/salaryleft.png");
+    cursor: pointer;
+}
+
+.banner .control i.sel-r {
+    float: right;
+    margin-right: 10px;
+    width: 15px;
+    height: 29px;
+    background: url("./images/salaryright.png");
+    cursor: pointer;
+}
+
+.else {
+    position: relative;
+    margin-top: 10px;
+}
+
+.else .nav-left {
+    position: absolute;
+    top: -435px;
+    left: 0;
+    width: 230px;
+    height: 512px;
+    background-color: #373b45;
+    border-radius: 10px;
+    /*overflow: hidden;*/
+}
+
+.else .nav-left h2 {
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px ;
+    background: #d72502;
+}
+
+.else .nav-left ul {
+    padding: 20px 0px;
+    width: 230px;
+    height: 416px;
+}
+
+.else .nav-left li {
+    width: 230px;
+    height: 27px;
+    font-size: 14px;
+    line-height: 27px;
+    /*margin-bottom: 2px;*/
+}
+
+.else .nav-left li:hover {
+    background-color: #565656;
+}
+
+.else .nav-left li a {
+    display: block;
+    width: 169px;
+    height: 100%;
+    padding: 0 31px;
+    color: #fff;
+}
+
+.else .nav-left  a  .l {
+    float: left;
+}
+
+.else .nav-left  a  .r {
+    float: right;
+}
+
+.else .nav-left .content {
+    position: absolute;
+    top: 40px;
+    right: -230px;
+    width: 230px;
+    height: 472px;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+    background-color: #fff;
+    display: none;
+}
+
+.else .some-msg {
+    float: left;
+    width: 230px;
+    height: 99px;
+    border-radius: 8px;
+    margin-left: 11px;
+    background-color: #fff;
+}
+
+.else .plan a,
+.else .school a,
+.else .pay a {
+    /*position: relative;*/
+    display: block;
+    width: 162px;
+    height: 43px;
+    padding: 28px 34px;
+    /*width: 100%;*/
+    /*height: 100%;*/
+} 
+
+.else .some-msg a img,
+.else .some-msg a span {
+    float: left;
+}
+
+.else .some-msg a span {
+    margin-left: 18px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+
+.else .plan {
+    margin-left: 242px;
+}
+
+.else .other {
+    float: left;
+    width: 230px;
+    height: 99px;
+    border-radius: 8px;
+    margin-left: 10px;
+    background-color: #e7e7e7;
+    overflow: hidden;
+}
+
+.else .other li {
+    float: left;
+    width: 114px;
+    height: 49px;
+    margin: 0 1px 1px 0;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+.else .other li a {
+    display: block;
+    width: 90px;
+    height: 25px;
+    padding: 12px;
+    color: #333;
+}
+
+.else .other li a:hover {
+    color: #d50212;
+}
+
+.else .other li a img ,
+.else .other li a span {
+    float: left;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.else .other li a span {
+    margin-left: 10px;
+    line-height: 25px;
+}
+
+.else .other li:nth-child(2n) {
+    width: 115px;
+    margin-right: 0;
+}
+
+.else .other li:nth-child(2n) a {
+    width: 91px;
+}
+
+.main {
+    position: relative;
+    padding-bottom: 79px;
+}
+
+.main .recomend {
+    height: 341px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.main .recomend,
+.main .money,
+.main .activity {
+    height: 341px;
+    margin-top: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.main .recomend h2,
+.main .money h2,
+.main .activity h2{
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
+    /* font-weight: bold; */
+}
+
+.main .recomend>div {
+    float: left;
+}
+
+.main .recomend .img-box {
+    position: relative;
+    width: 372px;
+    height: 269px;
+    overflow: hidden;
+}
+
+.main .recomend .img-box img {
+    position: absolute;
+    left: -100px;
+}
+
+.main .recomend .img-box  div.l-move {
+    position: absolute;
+    left: 0;
+    width: 186px;
+    height: 269px;
+}
+
+.main .recomend .img-box div.r-move {
+    position: absolute;
+    right: 0;
+    width: 186px;
+    height: 269px;
+}
+
+
+.main .recomend .article {
+    width: 340px;
+    height: 269px;
+    padding: 0 27px;
+    border: 1px solid #e5e5e5;
+    border-left: none;
+    color: #777777;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.main .recomend .article a {
+    display: block;
+    margin: 40px 0 23px 0;
+    font-size: 16px;
+    line-height: 16px;
+    color: #172c45;
+}
+
+.main .recomend .article a:hover {
+    color: #d50212;
+}
+
+.main .recomend .price-list {
+    margin-left: 30px;
+    height: 268px;
+    width: 403px;
+    /*padding: 0 5px;*/
+    border-top: 2px solid #d72502;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.main .recomend .price-list li {
+    font-size: 16px;
+    padding: 0 5px;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+
+.main .recomend .price-list li:hover {
+    background-color: #e7e7e7;
+}
+
+.main .recomend .price-list li i {
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-top: 6px;
+    margin-right: 10px;
+    background-color: #a7a7a7;
+    color: #fff;
+    line-height: 18px;
+    text-align: center;
+}
+
+.main .recomend .price-list li:nth-child(1) i,
+.main .recomend .price-list li:nth-child(2) i,
+.main .recomend .price-list li:nth-child(3) i {
+    background-color: #d50212;
+}
+
+.main .recomend .price-list li:first-child{
+    margin-top: 15px;
+}
+
+.main .recomend .price-list li a {
+    color: #172c45;
+}
+
+.main .money {
+    height: 344px;
+    margin-top: 20px;
+}
+
+.main .money h2 span,
+.main .activity h2 span {
+    float: left;
+}
+
+.main .money h2 i,
+.main .activity h2 i {
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 16px;
+    border-radius: 10px;
+    border: 1px solid #e5e5e5;
+    color: #777777;
+}
+
+.money-list .big-list>li {
+    float: left;
+    width: 285px;
+    height: 272px;
+    margin-right: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.money-list .big-list>li:last-child {
+    margin-right: 0;
+    border-top: 2px solid #d72502;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.money-list .big-list>li img {
+    width: 285px;
+    height: 171px;
+}
+
+.money-list .big-list>li a.content {
+    margin-top: 1px;
+    padding: 10px;
+    display: block;
+    height: 78px;
+    width: 263px;
+    border: 1px solid #e5e5e5;
+    font-size: 16px;
+    line-height: 30px;
+    color: #172c45;
+}
+
+.money-list .big-list>li a.look-more {
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    background-color: #d50212;
+}
+
+.money-list li:last-child .small-list {
+    width: 265px;
+    padding-left: 20px;
+}
+
+.money-list li:last-child .small-list li {
+    list-style-type: square;
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 18px;
+    width: 255px;
+    height: 14px;
+}
+
+.money-list li:last-child .small-list li a {
+    display: block;
+    width: 100%;;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #172c45;
+}
+
+.money-list li:last-child .small-list li:hover,
+.money-list li:last-child .small-list li a:hover {
+    color: #d50212;
+    text-decoration: underline;
+}
+
+.main .activity {
+    height: 433px;
+}
+
+.main .activity>div {
+    float: left;
+}
+
+.main .activity .img-box {
+    margin: 0 30px 0 30px;
+    width: 552px;
+    height: 353px;
+    overflow: hidden;
+}
+
+.main .activity li {
+    width: 294px;
+    height: 87px;
+    margin-bottom: 5px;
+    background-color: #f3f3f3;
+    position: relative;
+}
+
+.main .activity li i.triangle {
+    position: absolute;
+    top: 50%;
+    /* right: -40px; */
+    transform: translate(0,-50%);
+    width: 0;
+    height: 0;
+    border: 20px solid #f3f3f3;
+    border-top-width: 15px;
+    border-bottom-width: 15px;
+    display: none;
+   
+}
+
+.main .activity-list.l li i.triangle {
+    right: -40px;
+    border-color: transparent transparent transparent #e01d09;
+}
+
+.main .activity-list.r li i.triangle {
+    left: -40px;
+    border-color: transparent #e01d09 transparent transparent;
+}
+
+.main .activity li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333;
+}
+
+.main .activity .current {
+    background-color: #e01d09;
+}
+
+.main .activity-list .current i.triangle {
+    display: block;
+}
+
+.main .activity .current a {
+    color: #fff;
+}
+
+.main .activity li a p {
+    padding: 20px 15px 0 15px
+}
+
+.main .care {
+    position: relative;
+}
+
+.main .care .title {
+    height: 170px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.main .care .title h2 {
+    margin-top: 62px;
+    font-size: 26px;
+    line-height: 26px;
+}
+
+.main .care .title p {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #777777;
+}
+
+.main .pay-list {
+    position: relative;
+    width: 1200px;
+    height: 367px;
+    border: 1px solid #a0a0a0;
+    background-color: #fff;
+    overflow: hidden;
+    /*overflow: visible;*/
+}
+
+/*.main .pay-list ul {*/
+   /*height: 367px ;*/
+    /*overflow: hidden;*/
+/*}*/
+
+.main .pay-list li {
+    float: left;
+    width: 239px;
+    height: 183px;
+    border-right: 1px dotted #a0a0a0;
+    border-bottom: 1px dotted #a0a0a0;
+    background-color: #fff;
+}
+
+.main .pay-list li:hover {
+    background-color: #eaeaea;
+}
+
+
+.main .pay-list li:nth-child(5n) {
+    width: 238px;
+    border-right: none;
+}
+
+.main .pay-list li a {
+    display: block;
+    width: 209px;
+    height: 153px;
+    padding: 15px;
+    color: #333;
+    text-align: center;
+    font-size: 16px;
+}
+
+.main .pay-list li a img,
+.main .pay-list li a span.tag {
+    float: left;
+    line-height: 40px;
+}
+
+.main .pay-list li a img {
+    margin-left: 45px;
+}
+
+.main .pay-list li:nth-child(5n) a {
+    width: 208px;
+}
+
+.main .pay-list li a p.name {
+    margin-top: 60px;
+}
+
+.main .pay-list li a p.name,
+.main .pay-list li a p.average {
+    line-height: 18px;
+}
+
+.main .pay-list li a p.price {
+    margin-top: 25px;
+    color: #d50212;
+    line-height: 28px;
+}
+
+.main .pay-list li a p.price span {
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.main .care .control-down,
+.main .care .control-up {
+    position: absolute;
+    width: 29px;
+    height: 15px;
+    left: 50%;
+    bottom: -30px;
+    transform: translate(-50%,0);
+    background: url("./images/salarydown.png");
+}
+
+.main .care .control-up {
+    background:url("./images/salaryup.png");
+    display: none;
+}
+
+.bottom {
+    height: 402px;
+    background-color: #eaeaea;
+    text-align: center;
+}
+
+.bottom .inner {
+    height: 402px;
+    overflow: hidden;
+}
+
+.bottom .img-link {
+    margin-top: 55px;
+}
+
+
+.bottom .img-link a{
+    display: inline-block;
+    width: 165px;
+    height: 44px;
+
+}
+
+.bottom .img-link a img,
+.bottom .safe-link a img {
+    height: 28px;
+}
+
+.bottom p {
+    padding: 0 150px;
+}
+
+.bottom p.about-us {
+    margin: 37px 0 28px 0;
+}
+
+.bottom p.about-us a {
+    font-size: 14px;
+    line-height: 14px;
+    color: #333333;
+}
+
+.bottom p.about-us span {
+    margin:  0 15px;
+}
+
+.bottom p.other-link a {
+    padding-right: 12px;
+    line-height: 30px;
+    color: #333333;
+}
+
+.bottom p.phone {
+    margin-top: 38px;
+}
+
+.bottom .safe-link {
+    margin-top: 30px;
+}
+
+.bottom .safe-link a {
+    width: 96px;
+    height: 36px;
+}
+
+.tixing {
+    height: 58px;
+    background-color: #343b43;
+    line-height: 58px;
+    color: #c2c2c2;
+    text-align: center;
+}
+
+.main .serve {
+    position: fixed;
+    right: 0;
+    bottom: 35px;
+    height: 293px;
+}
+
+.serve li {
+    width: 58px;
+    height: 57px;
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+}
+
+.serve li:first-child,
+.serve li:last-child,
+.serve li:nth-child(2):hover,
+.serve li:nth-child(3):hover,
+.serve li:nth-child(4):hover {
+    background-color: #e60012;
+}
+
+.serve li:last-child {
+    border: none;
+}
+
+.serve li:first-child a,
+.serve li:last-child a{
+    color: #fff;
+}
+
+.serve li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #e60012;
+    overflow: hidden;
+}
+
+.serve li:first-child  i {
+    background: url("./images/zxzx1.gif") no-repeat;
+}
+
+.serve li:nth-child(2)  i {
+    background: url("./images/sqst.png") no-repeat;
+}
+
+.serve li:nth-child(3)  i {
+    background: url("./images/sqyh.png") no-repeat;
+}
+
+.serve li:nth-child(4)  i {
+    background: url("./images/zxbm.gif") no-repeat;
+}
+
+.serve li:last-child i {
+    background: url("./images/zx_bg1.png") no-repeat;
+}
+
+
+.serve li:nth-child(2):hover a,
+.serve li:nth-child(3):hover a,
+.serve li:nth-child(4):hover a {
+    color: #fff;
+}
+
+.serve li:nth-child(2):hover i {
+    background: url("./images/sqst2.png") no-repeat;
+}
+
+.serve li:nth-child(3):hover i {
+    background: url("./images/sqyh2.png") no-repeat;
+}
+
+.serve li:nth-child(4):hover i {
+    background: url("./images/zxbm1.gif") no-repeat;
+}
+
+.serve li a  i {
+    display: block;
+    width: 24px;
+    height: 26px;
+    margin: 5px 17px ;
+}
